@@ -1,7 +1,7 @@
 - ![ITU_LOGO](logo/ITU_logo.png)
 
 # Urbanization in Antalya
-Demonstrate urbanization in a designated area of ​​Antalya using Remote Sensing methods (change detection).
+Demonstrate urbanization in a designated area of ​​Antalya using Remote Sensing methods (change detection) to assure the importance of live update status 24/7 in case of an unexpected earthquake.
  
 - ![1](Image/1.jpg)
 # Study Area: Antalya
@@ -95,6 +95,8 @@ Kappa =  75.71%
 
 - ![17](Image/17.jpg)
 
+# CONCLUSION
+- *Remote sensing live version is needed due to the number of urban increasing by time and to the risk of having an earthquake,however, this operation is located at a very high financial cost.*
 
 
 
