@@ -25,9 +25,9 @@ Supervised Classification (Maximum Likelihood Method)
 Thermal method
 Tools:
 
-- Arcmap
+ Arcmap
 - ![4](logo/4.jpg)
-- Snap
+ Snap
 - ![5](logo/5.jpg)
 
 
