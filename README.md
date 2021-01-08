@@ -1,53 +1,80 @@
-# GEO_tutorial
-This repository contains documentation and code for lecture. 
-
-# 1. derece başlık
-## 2. derece başlık 
-### 3. derece başlık 
-
-***
-
-- Bu normal fontlu bir cümle.
-- _Bu italic fontlu bir cümle._
-- *Bu da italic fontlu bir cümle.*
-
-- __Bu kalın fontlu bir cümle_ _
-- **Bu da neden kalın fontlu bir cümle olmasın?**
-
-
-```Python 
-    def forward(self, x):
-        """Sequentially pass `x` trough model`s encoder, decoder and heads"""
-        features = self.encoder(x) # Extract features 
-
-        decoder_output = self.decoder(*features) # Decoder output for segmentation task
-        pred = self.segmentation_head(decoder_output) # Feed the decoder output to the segmentation head
-
-        reconstruct_decoder_output = self.skipless_decoder(*features) # Decoder output for reconstruction task
-        reconst_mask = self.reconstruct_segmentation_head(reconstruct_decoder_output) # Feed the decoder output to the reconstruction head
-
-        return pred,reconst_mask
-```
-## If you find our work beneficial, consider citing our paper! 
-
-Dataset used in this work is from SpaceNet6 challange. See the arXiv paper here: ["SpaceNet 6: Multi-Sensor All Weather Mapping Dataset"](https://arxiv.org/abs/2004.06500)
-
-
-
-
 - ![ITU_LOGO](logo/ITU_logo.png)
-- ![UHUZAM_LOGO](logo/UHUZAM_logo.png)
 
-
+# Urbanization in Antalya
+Demonstrate urbanization in a designated area of ​​Antalya using Remote Sensing methods (change detection).
+ 
+- ![1](Image/1.jpg)
+# Study Area: Antalya
 ```
-              precision    recall  f1-score   support
+              population    year  
 
-    building       0.90      0.86      0.88  38508672
-not_building       0.99      0.99      0.99 547096448
-
-    accuracy                           0.98 585605120
-   macro avg       0.95      0.93      0.94 585605120
-weighted avg       0.98      0.98      0.98 585605120
+               1719751     2000     
+               1978333     2010     
 ```
+
+
+## 2. Landsat 5 image with 30m spatial resolution
+ - ![2](Image/2.jpg)
+29/08/2000 Data (RGB)
+ - ![3](Image/3.jpg)
+25/08/2010 Data (RGB)
+
+### Methodology 
+Process techniques:
+Supervised Classification (Maximum Likelihood Method)
+Thermal method
+Tools:
+Arcmap
+- ![4](logo/4.jpg)
+Snap
+- ![5](logo/5.jpg)
+
+
+# SUPERVISED CLASSIFICATION 
+- ![6](Image/6.jpg)
+Sampling process on Arcmap for year 2000 data
+
+# Maximum Likelihood Classification Method
+- ![7](Image/7.jpg)
+2000
+- ![8](Image/8.jpg)
+2010
+
+# Joined Classes Classification 
+- ![9](Image/9.jpg)
+2000
+- ![10](Image/10.jpg)
+2010
+
+# Accuracy Assesment
+- ![11](Image/11.jpg)
+Control Points on Google Earth for year data
+- ![12](Image/12.png)
+Control Points on Arcmap for year data
+
+# Both 2000 and 2010 years classified image
+- ![13](Image/13.jpg)
+
+Referenced Data (2000)
+- ![14](Image/14.jpg)
+Total Accuracy = 81.25 %
+Kappa =  78.77%
+
+Referanced Data (2010)
+- ![15](Image/15.jpg)
+Total Accuracy = 78.75%
+Kappa =  75.71%
+
+# Statistical Results
+- *Table of Classes by Years.*
+- *Urban Area and Road Change by Years.*
+
+2000
+- ![16](Image/16.jpg)
+
+2010
+- ![17](Image/17.jpg)
+
+
 
 
