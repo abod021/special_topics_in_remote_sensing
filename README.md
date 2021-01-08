@@ -84,11 +84,11 @@ Kappa =  75.71%
 - *Table of Classes by Years.*
 - *Urban Area and Road Change by Years.*
 
-- 2000
+ 2000
 
 - ![16](Image/16.jpg)
 
-- 2010
+ 2010
 
 - ![17](Image/17.jpg)
 
